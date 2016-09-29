@@ -1,0 +1,91 @@
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 100%;
+        height: 640px;
+        margin: auto;
+        
+    }
+
+    .slick-slide {
+      margin: 5px 4px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+
+
+
+    .slick-item {
+      color: white;
+      background-color: #dddddd;
+      min-height: 630px;
+      position: relative;
+      text-align: ;
+      text-transform: uppercase;
+      margin: 0 1px;
+      display: flex;
+      justify-content: center;
+      align-items: ;
+        border-radius: 10px;
+    }
+
+
+.video-position{
+    height: 340px;
+    width: 100%;
+    position: absolute;
+}
+
+
+.video {
+  margin: 0;
+  display: block;
+  position: relative;
+  max-width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.video:hover + .video-control {
+  opacity: 0.8;
+}
+
+.video-control {
+  font-size: 4em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #333;
+  text-align: center;
+}
+.video-control:hover {
+  opacity: 1;
+}
+.video-control:before, .video-control:after {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  left: 50%;
+  margin: -0.5em 0 0 -0.5em;
+}
+.video-control:before {
+  content: '\25BA';
+}
+.video-control:after {
+  content: 'II';
+  font-weight: 700;
+}
+.video-control.paused:after {
+  opacity: 0;
+}
+.video-control.playing:before {
+  opacity: 0;
+}
